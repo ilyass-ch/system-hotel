@@ -1,0 +1,351 @@
+/* styles.css */
+
+.dark-blue-row {
+    background-color: #003366; /* Bleu foncé */
+    color: rgb(12, 12, 12); /* Texte blanc pour contraster avec le fond */
+  }
+  
+  .light-blue-row {
+    background-color: #cce0ff; /* Bleu clair */
+    color: black; /* Texte noir pour contraster avec le fond */
+  }
+ /* ManageUsers.css */
+
+.row-admin {
+    background-color: #ffe5e5; /* Couleur de fond pour les admins */
+  }
+  
+  .row-user {
+    background-color: #e5ffe5; /* Couleur de fond pour les utilisateurs */
+  }
+  
+  .row-admin:hover {
+    background-color: #ffcccc; /* Couleur de fond lors du survol pour les admins */
+  }
+  
+  .row-user:hover {
+    background-color: #ccffcc; /* Couleur de fond lors du survol pour les utilisateurs */
+  }
+  
+  .action-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .action-buttons .ant-btn {
+    margin: 0 5px;
+  }
+  .chat-list-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .chat-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .ant-list-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .ant-modal-header {
+    text-align: center;
+  }
+  .image-size {
+    width: 300px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .dark-blue-row {
+    background-color: #e6f7ff;
+  }
+  
+  .light-blue-row {
+    background-color: #f0f9ff;
+  }
+  .destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+  }
+  
+  .destinations-grid .ant-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .destinations-grid .ant-card:hover {
+    transform: translateY(-5px);
+  }
+  .stars-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacement entre les étoiles */
+    margin-bottom: 20px; /* Espace en dessous des étoiles */
+  }
+  .payment-form {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.payment-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card-input {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background-color: #fff;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+}
+
+.payment-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.payment-button:hover {
+  background-color: #0056b3;
+}
+.payment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.payment-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #424770;
+}
+
+.payment-input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.payment-input label {
+  font-weight: bold;
+  color: #424770;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.payment-input-group {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.payment-input input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  width: 100%;
+}
+
+.payment-modal {
+  max-width: 400px;
+}
+
+.payment-button {
+  margin-top: 20px;
+  width: 100%;
+}
+
+button.ant-btn-primary {
+  background-color: #5469d4;
+  border-color: #5469d4;
+  width: 100%;
+}
+
+button.ant-btn-primary:hover {
+  background-color: #3e54a3;
+  border-color: #3e54a3;
+}
+.card-logo {
+  width: 40px;
+  height: auto;
+  margin-right: 10px;
+}
+.card-type {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+/* Style général pour la page */
+.store-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f4f4f9;
+  font-family: 'Arial', sans-serif;
+  padding: 20px;
+}
+
+.store-container h1 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style pour le bouton d'achat */
+.store-container button {
+  background-color: #4CAF50; /* Couleur verte pour le bouton */
+  color: white;
+  padding: 15px 30px;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.store-container button:hover {
+  background-color: #45a049; /* Changement de couleur au survol */
+}
+
+/* Style pour le chargement */
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.loading-container h1 {
+  font-size: 2rem;
+  color: #555;
+}
+
+/* Style pour les messages d'erreur */
+.error-message {
+  color: red;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Style pour le composant DropIn */
+.dropin-wrapper {
+  margin: 20px 0;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Ajouter un effet de focus sur DropIn */
+.braintree-dropin .braintree-form__field-group:focus-within {
+  border-color: #4CAF50; /* Couleur verte lors de la mise au point */
+}
+
+
+
+
+
+
+
+
+
+
+/* styles.css */
+
+.payment-modal {
+  .ant-modal-content {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .ant-modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+  }
+
+  .ant-modal-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #343a40;
+  }
+
+  .ant-modal-close {
+    color: #495057;
+  }
+}
+
+.dropin-wrapper {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.amount-container {
+  text-align: center;
+  margin-top: 1rem;
+
+  h3 {
+    font-size: 1.2rem;
+    color: #495057;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+  }
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 0.875rem;
+  text-align: center;
+  margin-top: 1rem;
+}
